@@ -18,10 +18,10 @@ License</a>.
 
 ## Pendahuluan
 
-Lokakarya ini ditujukan untuk dua orang anggota peneliti mahasiswa yang
-menjadi bagian dari Penelitian Unggulan Program Studi (PUPS) berjudul
-[**MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN DIGITAL
-INGGRIS-INDONESIA DAN IMPLIKASI
+Lokakarya daring ini ditujukan untuk dua orang anggota peneliti
+mahasiswa yang menjadi bagian dari Penelitian Unggulan Program Studi
+(PUPS) berjudul [**MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN
+DIGITAL INGGRIS-INDONESIA DAN IMPLIKASI
 PEDAGOGISNYA**](https://udayananetworking.unud.ac.id/lecturer/research/880-gede-primahadi-wijaya-rajeg/a-model-for-translation-study-based-on-english-indonesian-translation-database-and-its-pedagogical-implication-1179)
 (ketua peneliti: Gede Primahadi Wijaya Rajeg) pada Program Studi
 [**Sastra Inggris**](https://sasing.unud.ac.id), [**Fakultas Ilmu
@@ -58,3 +58,42 @@ Berikut ini adalah pokok-pokok bahasan dalam lokakarya kali ini:
         dari) analisis kualitatif dengan R. (H3)
     3.  Visualisasi dasar (mis. diagram batang) untuk variabel
         nominal/kategorikal/kualitatif. (H4)
+
+Peranti yang diperlukan untuk lokakarya ini adalah MS Excel,
+[R](https://cran.r-project.org), dan juga
+[RStudio](https://www.rstudio.com/products/rstudio/download/). R dan
+RStudio dapat diunduh secara gratis.
+
+## Cara mengunduh materi
+
+1.  Kunjungi laman:
+    <https://github.com/gederajeg/pups-english-dept-workshop>
+
+2.  Kemudian, perhatikan kotak hijau bertuliskan `Code`. Klik tanda
+    panah putih kecil pada kotak hijau tersebut, lalu pada kotak dialog
+    yang keluar, pilih `Download ZIP`. Perhatikan gambar berikut:
+
+    ![Mengunduh materi dalam repositori](pups-download-repo.png)
+
+3.  Selanjutnya silakan ekstraksi (*unzip*) berkas ZIP tersebut jika,
+    setelah mengunduh, tidak secara otomatis diekstraksi/di-*unzip*.
+
+4.  Kemudian, materi lokakarya akan terdapat dalam direktori (*folder*)
+    dengan nama `pups-english-dept-workshop-main`. Perhatikan gambar
+    berikut:
+
+    ![Repositori yang sudah diunduh dan
+    diekstraksi](pups-downloaded-repo.png)
+
+    Data utama untuk lokakarya ditunjukkan oleh berkas bernama
+    `ROB_sample_conc_main.xlsx` (format MS Excel) dan
+    `ROB_sample_conc_main.tsv` (format *Tab-separated plain text*).
+    Berkas dengan awalan angka 1 - 3 dan diakhiri dengan `.R` adalah
+    kode pemrograman R yang berisi langkah-langkah pengolahan data, dan
+    analisis kuantitatif dan visualisasi dasar yang menjadi topik
+    bahasan lokakarya.
+
+5.  Selanjutnya, klik dua kali berkas dengan nama
+    `2021-05-25-PUPS-ds-workshop.Rproj` untuk membuka peranti RStudio
+    yang berkaitan dengan bahan-bahan lokakarya dalam direktori
+    tersebut.
