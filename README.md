@@ -96,4 +96,10 @@ RStudio dapat diunduh secara gratis.
 5.  Selanjutnya, klik dua kali berkas dengan nama
     `2021-05-25-PUPS-ds-workshop.Rproj` untuk membuka peranti RStudio
     yang berkaitan dengan bahan-bahan lokakarya dalam direktori
-    tersebut.
+    tersebut. Gambar berikut memperlihatkan tampilan RStudio yang
+    terbuka setelah meng-klik `2021-05-25-PUPS-ds-workshop.Rproj`:
+
+    ![Tampilan RStudio](rstudio-session-first-open.png)
+
+    Panel di pojok kanan bawah menampilkan isi direktori/folder dari
+    `pups-english-dept-workshop-main`.

@@ -56,4 +56,8 @@ Peranti yang diperlukan untuk lokakarya ini adalah MS Excel, [R](https://cran.r-
 
     Data utama untuk lokakarya ditunjukkan oleh berkas bernama `ROB_sample_conc_main.xlsx` (format MS Excel) dan `ROB_sample_conc_main.tsv` (format *Tab-separated plain text*). Berkas dengan awalan angka 1 - 3 dan diakhiri dengan `.R` adalah kode pemrograman R yang berisi langkah-langkah pengolahan data, dan analisis kuantitatif dan visualisasi dasar yang menjadi topik bahasan lokakarya.
 
-5. Selanjutnya, klik dua kali berkas dengan nama `2021-05-25-PUPS-ds-workshop.Rproj` untuk membuka peranti RStudio yang berkaitan dengan bahan-bahan lokakarya dalam direktori tersebut.
+5. Selanjutnya, klik dua kali berkas dengan nama `2021-05-25-PUPS-ds-workshop.Rproj` untuk membuka peranti RStudio yang berkaitan dengan bahan-bahan lokakarya dalam direktori tersebut. Gambar berikut memperlihatkan tampilan RStudio yang terbuka setelah meng-klik `2021-05-25-PUPS-ds-workshop.Rproj`:
+
+    ![Tampilan RStudio](rstudio-session-first-open.png)
+    
+    Panel di pojok kanan bawah menampilkan isi direktori/folder dari `pups-english-dept-workshop-main`.
