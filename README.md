@@ -4,11 +4,12 @@ Penelitian Unggulan Program Studi (PUPS)
 Instruktur: [Gede Primahadi Wijaya
 Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg)
 <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+(26 - 29 Juli 2021)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Materi
-lokakarya dalam repositori GitHub ini diberikan linsesi
+lokakarya dalam repositori GitHub ini diberikan lisensi
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
 Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License</a>.
@@ -23,7 +24,7 @@ mahasiswa yang menjadi bagian dari Penelitian Unggulan Program Studi
 (PUPS) berjudul [**MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN
 DIGITAL INGGRIS-INDONESIA DAN IMPLIKASI
 PEDAGOGISNYA**](https://udayananetworking.unud.ac.id/lecturer/research/880-gede-primahadi-wijaya-rajeg/a-model-for-translation-study-based-on-english-indonesian-translation-database-and-its-pedagogical-implication-1179)
-(ketua peneliti: Gede Primahadi Wijaya Rajeg) pada Program Studi
+(ketua tim peneliti: Gede Primahadi Wijaya Rajeg) pada Program Studi
 [**Sastra Inggris**](https://sasing.unud.ac.id), [**Fakultas Ilmu
 Budaya**](https://fib.unud.ac.id), [**Universitas
 Udayana**](https://www.unud.ac.id), Bali. Dalam lokakarya ini, mahasiswa
@@ -34,10 +35,11 @@ berasal dari sebagian data penelitian tersebut.
 
 Tujuan diadakannya lokakarya ini adalah untuk membekali mahasiswa bidang
 humaniora keterampilan dasar dalam pengolahan data kuantitatif mutakhir
-untuk penelitian mereka nanti (mis. dalam penulisan tugas akhir). Hal
-ini penting karena bidang ilmu humaniora, khususnya bahasa/linguistik,
-setakat ini mulai memanfaatkan data kebahasaan berukuran besar dan
-menggabungkan analisis kuantitatif dengan analisis kualitatif.
+untuk penelitian mereka nantinya (mis. dalam penulisan tugas akhir). Hal
+ini penting karena penelitian-penelitian dalam bidang ilmu humaniora,
+khususnya bahasa/linguistik, setakat ini mulai memanfaatkan data
+kebahasaan berukuran besar (yaitu korpus bahasa), serta menggabungkan
+pendekatan kuantitatif dan kualitatif.
 
 ## Pokok bahasan
 
