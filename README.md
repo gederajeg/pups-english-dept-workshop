@@ -103,15 +103,9 @@ Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
     ![Instalasi tidyverse](PROSES-3-santi-indriani.jpeg)
 
 Untuk memastikan package `tidyverse` telah terinstal, jalankan kode
-berikut pada konsol R:
+`library(tidyverse)` pada konsol R. Gambar berikut akan muncul:
 
-``` r
-library(tidyverse)
-```
-
-Gambar berikut akan muncul:
-
-    ![opentidyverse](loadtidyverse.png)
+<img src="loadtidyverse.png" width="2450" />
 
 ## Cara mengunduh materi
 

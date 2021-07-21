@@ -69,15 +69,11 @@ Gambar-gambar berikut menunjukkan proses instalasi `tidyverse` yang sedang berja
 
     ![Instalasi tidyverse](PROSES-3-santi-indriani.jpeg)
 
-Untuk memastikan package `tidyverse` telah terinstal, jalankan kode berikut pada konsol R:
+Untuk memastikan package `tidyverse` telah terinstal, jalankan kode `library(tidyverse)` pada konsol R. Gambar berikut akan muncul:
 
-```{r eval = FALSE}
-library(tidyverse)
+```{r echo = FALSE}
+knitr::include_graphics("loadtidyverse.png")
 ```
-
-Gambar berikut akan muncul:
-
-    ![opentidyverse](loadtidyverse.png)
 
 ## Cara mengunduh materi
 
