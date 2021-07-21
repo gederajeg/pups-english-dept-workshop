@@ -39,7 +39,45 @@ Berikut ini adalah pokok-pokok bahasan dalam lokakarya kali ini:
     a) Menyarikan secara kuantitatif (mis. menghitung hasil observasi dari) analisis kualitatif dengan R. (H3)
     a) Visualisasi dasar (mis. diagram batang) untuk variabel nominal/kategorikal/kualitatif. (H4)
 
+## Peranti yang perlu disiapkan
+
 Peranti yang diperlukan untuk lokakarya ini adalah MS Excel, [R](https://cran.r-project.org), dan juga [RStudio](https://www.rstudio.com/products/rstudio/download/). R dan RStudio dapat diunduh secara gratis.
+
+Setelah mengunduh R dan RStudio, silakan install packages dari [`tidyverse`](https://www.tidyverse.org) melalui console R secara keseluruhan. Ketik kode berikut lalu tekan ENTER (**instalasi memerlukan internet**):
+
+```{r eval = FALSE}
+install.packages("tidyverse")
+```
+
+atau install satu persatu package tersebut (disarankan menggunakan cara sebelumnya):
+
+```{r eval = FALSE}
+install.packages(c("dplyr", "tidyr", "ggplot2", "readr", "stringr", "purrr", "tibble", "forcats"))
+```
+
+Gambar-gambar berikut menunjukkan proses instalasi `tidyverse` yang sedang berjalan melalui konsol aplikasi R (untuk Windows) -- Kontribusi foto berasal dari Ketut Santi Indriani, S.S., M.Hum (Prodi Sastra Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
+
+1. Proses instalasi sedang berjalan (1)
+
+    ![Instalasi tidyverse](PROSES-1-santi-indriani.jpeg)
+    
+2. Proses instalasi sedang berjalan (2)
+
+    ![Instalasi tidyverse](PROSES-2-santi-indriani.jpeg)
+    
+3. Proses instalasi completed (ditandai dengan keterangan "the downloaded binary packages are in ....")
+
+    ![Instalasi tidyverse](PROSES-3-santi-indriani.jpeg)
+
+Untuk memastikan package `tidyverse` telah terinstal, jalankan kode berikut pada konsol R:
+
+```{r eval = FALSE}
+library(tidyverse)
+```
+
+Gambar berikut akan muncul:
+
+    ![opentidyverse](loadtidyverse.png)
 
 ## Cara mengunduh materi
 
