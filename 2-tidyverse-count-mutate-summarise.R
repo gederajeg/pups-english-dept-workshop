@@ -108,7 +108,7 @@ rob %>%
   filter(!is.na(ANIMACY_IDN_TARGET)) %>% 
   count(ANIMACY_ENG_TARGET, ANIMACY_IDN_TARGET)
 
-## menambahkan persentase berdasarkan grup.
+## menambahkan persentase berdasarkan grup =======
 ## untuk partisipan TARGET yang "animate" dalam bahasa Inggris, berapa persen terjemahannya bersifat "animate" dan berapa persen yang bersifat "inanimate"?
 ## untuk partisipan TARGET yang "inanimate" dalam bahasa Inggris, berapa persen terjemahannya bersifat "animate" dan berapa persen yang bersifat "inanimate"?
 ### dari pertanyaan ini, persentase yang dibuat adalah berdasarkan grup (in)animacy dalam bahasa Inggris (yaitu grouping variabelnya adalah ANIMACY_ENG_TARGET).
@@ -177,3 +177,54 @@ rob %>%                                           # step 0
   mutate(perc_cxn_by_eng = n / sum(n) * 100) %>%  # step 6
   arrange(desc(perc_cxn_by_eng)) %>%              # step 7
   filter(CXN_ENG == "TARGET-OBJ")                 # step 8
+
+
+
+# melakukan analisis statistik deskriptif untuk variabel numerik (i.e. kolom N_WORD_ENG, dan N_WORD_IDN), seperti nilai minimum, nilai maksimum, nilai rata-rata, nilai median.
+## Pertanyaan penelitian: berapa rata-rata panjang/jumlah kata kalimat dengan ROB dalam bahasa sumber, bahasa Inggris?
+## Cara 1:
+## 1. akses kolom/variabel numerik N_WORD_ENG dengan tanda dolar (bisa disimpan ke objek mis. dengan nama panjang_kata_eng)
+## 2. jadikan objek panjang_kata_eng input untuk fungsi mean() untuk menghasilkan nilai rata-rata
+## 3. silakan bereksperimen dengan fungsi min(), max(), dan median() untuk data panjang_kata_eng.
+## 3.1 berapa nilai minimum jumlah kata untuk kalimat bahasa sumber dengan ROB?
+## 3.2 berapa nilai maksimum jumlah kata untuk kalimat bahasa sumber dengan ROB?
+## 3.3 berapa nilai median jumlah kata untuk kalimat bahasa sumber dengan ROB?
+
+
+## JAWABAN - Cara 1:
+## 1. dari data rob, akses dengan tanda dolar kolom/variabel numerik N_WORD_ENG (kemudian simpan ke objek mis. dengan nama panjang_kata_eng)
+panjang_kata_eng <- rob$N_WORD_ENG
+## 2. jadikan objek panjang_kata_eng input untuk fungsi mean() untuk menghasilkan nilai rata-rata
+mean(panjang_kata_eng)
+## 3. silakan bereksperimen dengan fungsi min(), max(), dan median() untuk data panjang_kata_eng.
+## 3.1 berapa nilai minimum jumlah kata untuk kalimat bahasa sumber dengan ROB?
+min(panjang_kata_eng)
+## 3.2 berapa nilai maksimum jumlah kata untuk kalimat bahasa sumber dengan ROB?
+max(panjang_kata_eng)
+## 3.3 berapa nilai median jumlah kata untuk kalimat bahasa sumber dengan ROB?
+median(panjang_kata_eng)
+
+## Cara 2 (tidyverse style):
+### langsung gunakan kolom N_WORD_ENG sebagai input mean(), median(), min(), max() dalam fungsi summarise(), dengan menambahkan nama
+### kolom tempat luaran fungsi-fungsi statistik deskriptif tersebut akan disimpan. Luarannya berupa data frame/tibble
+rob %>% 
+  summarise(mean_nword_eng = mean(N_WORD_ENG),
+            median_nword_eng = median(N_WORD_ENG),
+            min_nword_eng = min(N_WORD_ENG),
+            max_nword_eng = max(N_WORD_ENG)) 
+
+## Coba praktikkan dengan N_WORD_IDN, dan interpretasikan hasil kuantitatifnya dalam konteks pertanyaan berikut: secara rata-rata, apakah padanan kalimat dengan ROB dalam sampel lebih tinggi?
+
+
+
+# menyimpan data tabel/data frame dari R ke file external (.txt)
+## gunakan fungsi write.table()
+## misalkan, kita ingin menyimpan hasil tabulasi konstruksi ROB BIng dan BI berikut:
+cxn_eng <- rob %>%                              # step 0
+  filter(!is.na(CXN_ENG), !is.na(CXN_IDN)) %>%  # step 1 & 2
+  count(CXN_ENG, CXN_IDN) %>%                   # step 3
+  arrange(desc(CXN_ENG)) 
+cxn_eng
+
+## hasil tabulasi tersimpan dalam data tabel/data frame cxn_eng, yang akan kita simpan ke komputer (mis. untuk bisa dibuka di MS Excel)
+write.table(cxn_eng, file = "construction-frequency.txt", quote = FALSE, sep = "\t", row.names = FALSE)

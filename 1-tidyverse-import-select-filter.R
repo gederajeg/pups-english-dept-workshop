@@ -22,7 +22,18 @@ rob
 summary(rob)
 
 # Mengakses kolom dalam tabel ========
-## akses/memilih sebagian kolom dengan select()
+
+## akses kolom dalam tabel data frame dengan tanda dolar $; kolom yang diakses akan menjadi vektor
+### akses isian dari kolom LEX_ENG_TARGET (kata pengisi partisipan TARGET dari ROB)
+rob$LEX_ENG_TARGET
+
+### kita bisa simpan hasil akses kolom ke objek untuk kegunaan/operasi lebih lanjut nanti
+lex_eng_target <- rob$LEX_ENG_TARGET
+
+## akses/memilih sebagian kolom dengan select(); kolom yang diakses akan tetap menjadi data frame/tibble
+### akses kolom LEX_ENG_TARGET
+select(rob, LEX_ENG_TARGET)
+
 ### akses kolom TRANSLATION_NODE
 select(rob, TRANSLATION_NODE)
 
@@ -112,11 +123,11 @@ rob %>% select(TRANSLATION, matches("_IDN_"))
 # 4.1 tipe konstruksi mana yang frekuensinya tinggi untuk ROB di bahasa Inggris dan padanannya di bahasa Indonesia?
 
 # Menyaring observasi/baris ============
-## Pemrosesan data yang lumrah dilakukan adalah menyaring observasi (dengan fungsi filter()) untuk suatu variabel/kolom berdasarkan kondisi tertentu. Misalnya, dari data rob, saring baris/observasi di mana tipe semantis dari partisipan target bahasa Indonesia adalah "victim".
+## Pemrosesan data yang lumrah dilakukan adalah menyaring observasi (dengan fungsi filter()) untuk suatu variabel/kolom berdasarkan kondisi tertentu. Misalnya, dari data rob, saring/filter baris/observasi di mana tipe semantis dari partisipan target bahasa Indonesia (kolom TYPE_IDN_TARGET) adalah/SAMA DENGAN (yaitu ==) "victim".
 rob %>% 
   filter(TYPE_IDN_TARGET == "victim")
 
-## Saring baris/observasi di mana tipe semantis partisipan target bahasa Indonesia BUKAN/TIDAK SAMA DENGAN "victim"
+## Saring baris/observasi di mana tipe semantis partisipan target bahasa Indonesia BUKAN/TIDAK SAMA DENGAN (yaitu != ) "victim"
 rob %>% 
   filter(TYPE_IDN_TARGET != "victim")
 
