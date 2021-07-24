@@ -1,0 +1,5 @@
+subject
+object
+predicate
+complement
+adverbial
