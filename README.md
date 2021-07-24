@@ -38,13 +38,13 @@ pada Program Studi [**Sastra Inggris**](https://sasing.unud.ac.id),
 Udayana**](https://www.unud.ac.id), Bali. Dalam lokakarya ini, anggota
 peneliti mahasiswa mendapat pelatihan dan pemahaman dasar dalam
 pengelolaan dan analisis data kuantitatif menggunakan Microsoft Excel
-dan bahasa pemrograman [R](https://www.r-project.org) (R Core Team
-2021). Data yang digunakan dalam lokakarya ini berasal dari sebagian
-data penelitian tersebut (untuk mendapatkan latar belakang lebih rinci
-terkait topik penelitian, berikut ini rekaman [presentasi
+dan bahasa pemrograman [R](https://www.r-project.org) ([R Core Team
+2021](#ref-rcoreteam)). Data yang digunakan dalam lokakarya ini berasal
+dari sebagian data penelitian tersebut (untuk mendapatkan latar belakang
+lebih rinci terkait topik penelitian, berikut ini rekaman [presentasi
 proposal](https://youtu.be/2myhItVlhao) dan
 [seminar](https://youtu.be/xQ3YKag8yPw) untuk sebagian hasil penelitian
-(Rajeg et al. 2021)).
+([Rajeg et al. 2021](#ref-rajeg_derajat_2021))).
 
 Tujuan diadakannya lokakarya ini adalah untuk membekali mahasiswa bidang
 humaniora keterampilan dasar dalam pengolahan data dan analisis
@@ -61,10 +61,11 @@ Berikut ini adalah pokok-pokok bahasan dalam lokakarya kali ini:
 
 1.  Hari Pertama
     1.  Pemahaman tentang keteraturan pengorganisasian data (*tidy
-        data*) (Wickham 2014; Broman and Woo 2018).
+        data*) ([Wickham 2014](#ref-wickham_tidy_2014); [Broman and Woo
+        2018](#ref-broman_data_2018)).
     2.  Penyimpanan data kebahasaan dan analisis kualitatif terkait
         variabel-variabel linguistik yang dikaji (*coding*/*annotation*)
-        dalam MS Excel (Broman and Woo 2018).
+        dalam MS Excel ([Broman and Woo 2018](#ref-broman_data_2018)).
     3.  Menyarikan secara kuantitatif hasil analisis kualitatif dalam MS
         Excel menggunakan *pivot table*.
     4.  Mengekspor data dalam format MS Excel ke dalam format
@@ -85,10 +86,11 @@ Peranti yang diperlukan untuk lokakarya ini adalah MS Excel,
 RStudio dapat diunduh secara gratis.
 
 Setelah mengunduh R dan RStudio, silakan install packages dari
-[`tidyverse`](https://www.tidyverse.org) (Wickham et al. 2019) melalui
-console R. Package *tidyverse* adalah suatu ekosistem mutakhir dan
-populer saat ini di R untuk pengolahan data (*data science*) (Wickham
-and Grolemund 2017). Ketik kode berikut lalu tekan ENTER untuk
+[`tidyverse`](https://www.tidyverse.org) ([Wickham et al.
+2019](#ref-wickham_welcome_2019)) melalui console R. Package *tidyverse*
+adalah suatu ekosistem mutakhir dan populer saat ini di R untuk
+pengolahan data (*data science*) ([Wickham and Grolemund
+2017](#ref-wickham_r_2017)). Ketik kode berikut lalu tekan ENTER untuk
 menginstal `tidyverse` (**instalasi memerlukan internet**):
 
 ``` r
