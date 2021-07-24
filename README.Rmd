@@ -1,8 +1,11 @@
 ---
-output: github_document
+output: 
+  github_document:
+    toc: true
 title: "Lokakarya Dasar-dasar Pengolahan Data menggunakan MS Excel dan R - Penelitian Unggulan Program Studi (PUPS)"
 date: "(26 - 29 Juli 2021)"
 author: 'Instruktur: [Gede Primahadi Wijaya Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-rajeg) <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>'
+bibliography: biblio.bib
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -15,35 +18,38 @@ knitr::opts_chunk$set(
 ```
 
 
+# Lisensi materi lokakarya {-}
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Materi lokakarya dalam repositori GitHub ini diberikan lisensi <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-## Pendahuluan
+# Pendahuluan {#pengantar}
 
-Lokakarya daring ini ditujukan untuk dua orang anggota peneliti mahasiswa yang menjadi bagian dari Penelitian Unggulan Program Studi (PUPS) berjudul [__MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN DIGITAL INGGRIS-INDONESIA DAN IMPLIKASI PEDAGOGISNYA__](https://udayananetworking.unud.ac.id/lecturer/research/880-gede-primahadi-wijaya-rajeg/a-model-for-translation-study-based-on-english-indonesian-translation-database-and-its-pedagogical-implication-1179) (ketua tim peneliti: Gede Primahadi Wijaya Rajeg) pada Program Studi [__Sastra Inggris__](https://sasing.unud.ac.id), [__Fakultas Ilmu Budaya__](https://fib.unud.ac.id), [__Universitas Udayana__](https://www.unud.ac.id), Bali. Dalam lokakarya ini, mahasiswa diajarkan pemahaman dasar dalam pengelolaan dan analisis data kuantitatif menggunakan Microsoft Excel dan bahasa pemrograman [R](https://www.r-project.org). Data yang digunakan dalam lokakarya ini berasal dari sebagian data penelitian tersebut.
+Lokakarya daring ini ditujukan untuk dua orang anggota peneliti mahasiswa yang menjadi bagian dari Penelitian Unggulan Program Studi (PUPS) berjudul [__MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN DIGITAL INGGRIS-INDONESIA DAN IMPLIKASI PEDAGOGISNYA__](https://udayananetworking.unud.ac.id/lecturer/research/880-gede-primahadi-wijaya-rajeg/a-model-for-translation-study-based-on-english-indonesian-translation-database-and-its-pedagogical-implication-1179) pada Program Studi [__Sastra Inggris__](https://sasing.unud.ac.id), [__Fakultas Ilmu Budaya__](https://fib.unud.ac.id), [__Universitas Udayana__](https://www.unud.ac.id), Bali. Dalam lokakarya ini, anggota peneliti mahasiswa mendapat pelatihan dan pemahaman dasar dalam pengelolaan dan analisis data kuantitatif menggunakan Microsoft Excel dan bahasa pemrograman [R](https://www.r-project.org) [@rcoreteam]. Data yang digunakan dalam lokakarya ini berasal dari sebagian data penelitian tersebut (untuk mendapatkan latar belakang lebih rinci terkait topik penelitian, berikut ini rekaman [presentasi proposal](https://youtu.be/2myhItVlhao) dan [seminar](https://youtu.be/xQ3YKag8yPw) untuk sebagian hasil penelitian [@rajeg_derajat_2021]).
 
-Tujuan diadakannya lokakarya ini adalah untuk membekali mahasiswa bidang humaniora keterampilan dasar dalam pengolahan data kuantitatif mutakhir untuk penelitian mereka nantinya (mis. dalam penulisan tugas akhir). Hal ini penting karena penelitian-penelitian dalam bidang ilmu humaniora, khususnya bahasa/linguistik, setakat ini mulai memanfaatkan data kebahasaan berukuran besar (yaitu korpus bahasa), serta menggabungkan pendekatan kuantitatif dan kualitatif.
+Tujuan diadakannya lokakarya ini adalah untuk membekali mahasiswa bidang humaniora keterampilan dasar dalam pengolahan data dan analisis kuantitatif mendasar menggunakan peranti komputasional mutakhir untuk penelitian mereka nantinya (mis. dalam penulisan tugas akhir). Hal ini penting karena penelitian-penelitian dalam bidang ilmu humaniora, khususnya bahasa/linguistik, setakat ini mulai memanfaatkan data kebahasaan berukuran besar (yaitu korpus bahasa), serta menggabungkan pendekatan kuantitatif dan kualitatif.
 
-## Pokok bahasan
+# Pokok bahasan {#isi-workshop}
 
 Berikut ini adalah pokok-pokok bahasan dalam lokakarya kali ini:
 
 1) Hari Pertama
-    a) Penyimpanan data kebahasaan dan analisis kualitatif terkait variabel-variabel linguistik yang dikaji (*coding*/*annotation*) dalam MS Excel.
-    a) Menyarikan secara kuantitatif hasil analisis kualitatif dalam MS Excel.
+    a) Pemahaman tentang keteraturan pengorganisasian data (*tidy data*) [@wickham_tidy_2014; @broman_data_2018].
+    a) Penyimpanan data kebahasaan dan analisis kualitatif terkait variabel-variabel linguistik yang dikaji (*coding*/*annotation*) dalam MS Excel [@broman_data_2018].
+    a) Menyarikan secara kuantitatif hasil analisis kualitatif dalam MS Excel menggunakan *pivot table*.
     a) Mengekspor data dalam format MS Excel ke dalam format *Tab-separated Plain Text* untuk nantinya diolah menggunakan R.
 1) Hari Kedua - Hari Keempat
-    a) Mengunggah data tabel ke R dan eksplorasi lanjutan (mis. menyaring observasi). (H2)
+    a) Pengenalan dasar R, mengunggah data tabel ke R, dan eksplorasi dasar. (H2)
     a) Menyarikan secara kuantitatif (mis. menghitung hasil observasi dari) analisis kualitatif dengan R. (H3)
     a) Visualisasi dasar (mis. diagram batang) untuk variabel nominal/kategorikal/kualitatif. (H4)
 
-## Peranti yang perlu disiapkan
+# Instalasi peranti untuk lokakarya {#instalasi}
 
 Peranti yang diperlukan untuk lokakarya ini adalah MS Excel, [R](https://cran.r-project.org), dan juga [RStudio](https://www.rstudio.com/products/rstudio/download/). R dan RStudio dapat diunduh secara gratis.
 
-Setelah mengunduh R dan RStudio, silakan install packages dari [`tidyverse`](https://www.tidyverse.org) melalui console R secara keseluruhan. Ketik kode berikut lalu tekan ENTER (**instalasi memerlukan internet**):
+Setelah mengunduh R dan RStudio, silakan install packages dari [`tidyverse`](https://www.tidyverse.org) [@wickham_welcome_2019] melalui console R. Package *tidyverse* adalah suatu ekosistem mutakhir dan populer saat ini di R untuk pengolahan data (*data science*) [@wickham_r_2017]. Ketik kode berikut lalu tekan ENTER untuk menginstal `tidyverse` (**instalasi memerlukan internet**):
 
 ```{r eval = FALSE}
 install.packages("tidyverse")
@@ -55,7 +61,7 @@ atau install satu persatu package tersebut (disarankan menggunakan cara sebelumn
 install.packages(c("dplyr", "tidyr", "ggplot2", "readr", "stringr", "purrr", "tibble", "forcats"))
 ```
 
-Gambar-gambar berikut menunjukkan proses instalasi `tidyverse` yang sedang berjalan melalui konsol aplikasi R (untuk Windows) -- Kontribusi foto berasal dari Ketut Santi Indriani, S.S., M.Hum (Prodi Sastra Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
+Gambar-gambar berikut menunjukkan proses instalasi `tidyverse` yang sedang berjalan melalui konsol aplikasi R (untuk Windows) -- Kontribusi tangkapan layar berikut berasal dari Ketut Santi Indriani, S.S., M.Hum (Prodi Sastra Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
 
 1. Proses instalasi sedang berjalan (1)
 
@@ -75,7 +81,7 @@ Untuk memastikan package `tidyverse` telah terinstal, jalankan kode `library(tid
 knitr::include_graphics("loadtidyverse.png")
 ```
 
-## Cara mengunduh materi
+# Cara mengunduh materi lokakarya {#unduh-materi}
 
 1. Kunjungi laman: https://github.com/gederajeg/pups-english-dept-workshop
 
@@ -96,3 +102,6 @@ knitr::include_graphics("loadtidyverse.png")
     ![Tampilan RStudio](rstudio-session-first-open.png)
     
     Panel di pojok kanan bawah menampilkan isi direktori/folder dari `pups-english-dept-workshop-main`.
+    
+
+# Daftar pustaka {-}

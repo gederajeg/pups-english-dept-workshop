@@ -6,7 +6,16 @@ Rajeg](https://udayananetworking.unud.ac.id/lecturer/880-gede-primahadi-wijaya-r
 <a itemprop="sameAs" content="https://orcid.org/0000-0002-2047-8621" href="https://orcid.org/0000-0002-2047-8621" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
 (26 - 29 Juli 2021)
 
+-   [Lisensi materi lokakarya](#lisensi-materi-lokakarya)
+-   [Pendahuluan](#pengantar)
+-   [Pokok bahasan](#isi-workshop)
+-   [Instalasi peranti untuk lokakarya](#instalasi)
+-   [Cara mengunduh materi lokakarya](#unduh-materi)
+-   [Daftar pustaka](#daftar-pustaka)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# Lisensi materi lokakarya
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Materi
 lokakarya dalam repositori GitHub ini diberikan lisensi
@@ -17,51 +26,58 @@ License</a>.
 <!-- badges: start -->
 <!-- badges: end -->
 
-## Pendahuluan
+# Pendahuluan
 
 Lokakarya daring ini ditujukan untuk dua orang anggota peneliti
 mahasiswa yang menjadi bagian dari Penelitian Unggulan Program Studi
 (PUPS) berjudul [**MODEL KAJIAN TERJEMAHAN BERBASIS BANK DATA TERJEMAHAN
 DIGITAL INGGRIS-INDONESIA DAN IMPLIKASI
 PEDAGOGISNYA**](https://udayananetworking.unud.ac.id/lecturer/research/880-gede-primahadi-wijaya-rajeg/a-model-for-translation-study-based-on-english-indonesian-translation-database-and-its-pedagogical-implication-1179)
-(ketua tim peneliti: Gede Primahadi Wijaya Rajeg) pada Program Studi
-[**Sastra Inggris**](https://sasing.unud.ac.id), [**Fakultas Ilmu
-Budaya**](https://fib.unud.ac.id), [**Universitas
-Udayana**](https://www.unud.ac.id), Bali. Dalam lokakarya ini, mahasiswa
-diajarkan pemahaman dasar dalam pengelolaan dan analisis data
-kuantitatif menggunakan Microsoft Excel dan bahasa pemrograman
-[R](https://www.r-project.org). Data yang digunakan dalam lokakarya ini
-berasal dari sebagian data penelitian tersebut.
+pada Program Studi [**Sastra Inggris**](https://sasing.unud.ac.id),
+[**Fakultas Ilmu Budaya**](https://fib.unud.ac.id), [**Universitas
+Udayana**](https://www.unud.ac.id), Bali. Dalam lokakarya ini, anggota
+peneliti mahasiswa mendapat pelatihan dan pemahaman dasar dalam
+pengelolaan dan analisis data kuantitatif menggunakan Microsoft Excel
+dan bahasa pemrograman [R](https://www.r-project.org) (R Core Team
+2021). Data yang digunakan dalam lokakarya ini berasal dari sebagian
+data penelitian tersebut (untuk mendapatkan latar belakang lebih rinci
+terkait topik penelitian, berikut ini rekaman [presentasi
+proposal](https://youtu.be/2myhItVlhao) dan
+[seminar](https://youtu.be/xQ3YKag8yPw) untuk sebagian hasil penelitian
+(Rajeg et al. 2021)).
 
 Tujuan diadakannya lokakarya ini adalah untuk membekali mahasiswa bidang
-humaniora keterampilan dasar dalam pengolahan data kuantitatif mutakhir
-untuk penelitian mereka nantinya (mis. dalam penulisan tugas akhir). Hal
-ini penting karena penelitian-penelitian dalam bidang ilmu humaniora,
+humaniora keterampilan dasar dalam pengolahan data dan analisis
+kuantitatif mendasar menggunakan peranti komputasional mutakhir untuk
+penelitian mereka nantinya (mis. dalam penulisan tugas akhir). Hal ini
+penting karena penelitian-penelitian dalam bidang ilmu humaniora,
 khususnya bahasa/linguistik, setakat ini mulai memanfaatkan data
 kebahasaan berukuran besar (yaitu korpus bahasa), serta menggabungkan
 pendekatan kuantitatif dan kualitatif.
 
-## Pokok bahasan
+# Pokok bahasan
 
 Berikut ini adalah pokok-pokok bahasan dalam lokakarya kali ini:
 
 1.  Hari Pertama
-    1.  Penyimpanan data kebahasaan dan analisis kualitatif terkait
+    1.  Pemahaman tentang keteraturan pengorganisasian data (*tidy
+        data*) (Wickham 2014; Broman and Woo 2018).
+    2.  Penyimpanan data kebahasaan dan analisis kualitatif terkait
         variabel-variabel linguistik yang dikaji (*coding*/*annotation*)
-        dalam MS Excel.
-    2.  Menyarikan secara kuantitatif hasil analisis kualitatif dalam MS
-        Excel.
-    3.  Mengekspor data dalam format MS Excel ke dalam format
+        dalam MS Excel (Broman and Woo 2018).
+    3.  Menyarikan secara kuantitatif hasil analisis kualitatif dalam MS
+        Excel menggunakan *pivot table*.
+    4.  Mengekspor data dalam format MS Excel ke dalam format
         *Tab-separated Plain Text* untuk nantinya diolah menggunakan R.
 2.  Hari Kedua - Hari Keempat
-    1.  Mengunggah data tabel ke R dan eksplorasi lanjutan (mis.
-        menyaring observasi). (H2)
+    1.  Pengenalan dasar R, mengunggah data tabel ke R, dan eksplorasi
+        dasar. (H2)
     2.  Menyarikan secara kuantitatif (mis. menghitung hasil observasi
         dari) analisis kualitatif dengan R. (H3)
     3.  Visualisasi dasar (mis. diagram batang) untuk variabel
         nominal/kategorikal/kualitatif. (H4)
 
-## Peranti yang perlu disiapkan
+# Instalasi peranti untuk lokakarya
 
 Peranti yang diperlukan untuk lokakarya ini adalah MS Excel,
 [R](https://cran.r-project.org), dan juga
@@ -69,9 +85,11 @@ Peranti yang diperlukan untuk lokakarya ini adalah MS Excel,
 RStudio dapat diunduh secara gratis.
 
 Setelah mengunduh R dan RStudio, silakan install packages dari
-[`tidyverse`](https://www.tidyverse.org) melalui console R secara
-keseluruhan. Ketik kode berikut lalu tekan ENTER (**instalasi memerlukan
-internet**):
+[`tidyverse`](https://www.tidyverse.org) (Wickham et al. 2019) melalui
+console R. Package *tidyverse* adalah suatu ekosistem mutakhir dan
+populer saat ini di R untuk pengolahan data (*data science*) (Wickham
+and Grolemund 2017). Ketik kode berikut lalu tekan ENTER untuk
+menginstal `tidyverse` (**instalasi memerlukan internet**):
 
 ``` r
 install.packages("tidyverse")
@@ -86,8 +104,8 @@ install.packages(c("dplyr", "tidyr", "ggplot2", "readr", "stringr", "purrr", "ti
 
 Gambar-gambar berikut menunjukkan proses instalasi `tidyverse` yang
 sedang berjalan melalui konsol aplikasi R (untuk Windows) – Kontribusi
-foto berasal dari Ketut Santi Indriani, S.S., M.Hum (Prodi Sastra
-Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
+tangkapan layar berikut berasal dari Ketut Santi Indriani, S.S., M.Hum
+(Prodi Sastra Inggris, Fakultas Ilmu Budaya, Universitas Udayana).
 
 1.  Proses instalasi sedang berjalan (1)
 
@@ -107,7 +125,7 @@ Untuk memastikan package `tidyverse` telah terinstal, jalankan kode
 
 <img src="loadtidyverse.png" width="2450" />
 
-## Cara mengunduh materi
+# Cara mengunduh materi lokakarya
 
 1.  Kunjungi laman:
     <https://github.com/gederajeg/pups-english-dept-workshop>
@@ -146,3 +164,58 @@ Untuk memastikan package `tidyverse` telah terinstal, jalankan kode
 
     Panel di pojok kanan bawah menampilkan isi direktori/folder dari
     `pups-english-dept-workshop-main`.
+
+# Daftar pustaka
+
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-broman_data_2018" class="csl-entry">
+
+Broman, Karl W., and Kara H. Woo. 2018. “Data Organization in
+Spreadsheets.” *The American Statistician* 72 (1): 2–10.
+<https://doi.org/10.1080/00031305.2017.1375989>.
+
+</div>
+
+<div id="ref-rcoreteam" class="csl-entry">
+
+R Core Team. 2021. *R: A Language and Environment for Statistical
+Computing*. Vienna, Austria: R Foundation for Statistical Computing.
+<https://www.R-project.org/>.
+
+</div>
+
+<div id="ref-rajeg_derajat_2021" class="csl-entry">
+
+Rajeg, Gede Primahadi Wijaya, I Made Rajeg, I Gede Semara Dharma Putra,
+and Putu Dea Indah Kartini. 2021. “Derajat Kesepadanan Konstruksional
+Terjemahan Verba Bahasa Inggris *ROB* Dalam Bahasa Indonesia.” Paper
+presented at the Seminar Nasional Bahasa Ibu (SNBI) 2021.
+<https://youtu.be/xQ3YKag8yPw>.
+
+</div>
+
+<div id="ref-wickham_tidy_2014" class="csl-entry">
+
+Wickham, Hadley. 2014. “Tidy Data.” *Journal of Statistical Software* 59
+(1, 1): 1–23. <https://doi.org/10.18637/jss.v059.i10>.
+
+</div>
+
+<div id="ref-wickham_welcome_2019" class="csl-entry">
+
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy
+McGowan, Romain François, Garrett Grolemund, et al. 2019. “Welcome to
+the Tidyverse.” *Journal of Open Source Software* 4 (43): 1686.
+<https://doi.org/10.21105/joss.01686>.
+
+</div>
+
+<div id="ref-wickham_r_2017" class="csl-entry">
+
+Wickham, Hadley, and Garrett Grolemund. 2017. *R for Data Science*.
+Canada: O’Reilly. <http://r4ds.had.co.nz/>.
+
+</div>
+
+</div>
