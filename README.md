@@ -25,7 +25,8 @@ Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License</a>.
 
 Harap memberikan kutipan berikut jika materi (data dan kode pemrograman
-R) pada repositori ini digunakan untuk aktivitas akademik lebih lanjut:
+R) pada repositori ini ([Rajeg 2021](#ref-rajeg_lokakarya_2021))
+digunakan untuk aktivitas akademik lebih lanjut:
 
 > Rajeg, Gede Primahadi Wijaya. (2021, July 24). Lokakarya pengolahan
 > data mendasar dengan MS Excel dan R (Version 1.0). Zenodo.
@@ -192,6 +193,14 @@ Spreadsheets.” *The American Statistician* 72 (1): 2–10.
 R Core Team. 2021. *R: A Language and Environment for Statistical
 Computing*. Vienna, Austria: R Foundation for Statistical Computing.
 <https://www.R-project.org/>.
+
+</div>
+
+<div id="ref-rajeg_lokakarya_2021" class="csl-entry">
+
+Rajeg, Gede Primahadi Wijaya. 2021. *Lokakarya Pengolahan Data Mendasar
+Dengan MS Excel Dan R* (version v1.0). Zenodo.
+<https://doi.org/10.5281/ZENODO.5131785>.
 
 </div>
 
